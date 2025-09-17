@@ -1,0 +1,137 @@
+body {
+    font-family: 'Times New Roman', Times, serif ;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #1b1b1b;
+    color: rgb(0, 0, 0);
+    animation: fadeIn 2s ease-in;
+    transition: background 1s, color 1s;
+
+}
+
+body.dark-mode {
+    background-color: #a8a0a0;
+    color:  #a8a0a0;
+}
+
+button#toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+header {
+    background: #333;
+    color: #fffffffa;
+    text-align: center;
+    padding: 2rem;
+    animation: fadeIn 2s ease-in;
+}
+
+body.dark-mode header {
+    background-color: #5c5656;
+}
+
+body.dark-mode footer {
+    background-color: #5c5656;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background: rgba(3, 3, 3, 0.295);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(46, 45, 46);
+    color: whitesmoke;
+    text-align: center;
+    transition: background 1s, color 1s;
+
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fffffffa
+}
+
+a {
+    color:rgb(141, 176, 192);
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#contact ul {
+    display: flex;
+    flex-direction: column; /* Položky pod sebe */
+    align-items: center;    /* Zarovnání na střed */
+    padding-left: 0;
+}
+
+#contact i {
+    margin-right: 10px;
+}
+
+ h1 {
+    margin-left: 10px;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white
+}
+
+h1 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo1 {
+  width: 50px;
+  height: auto;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.logo2 {
+  width: 50px;
+  height: auto;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba#ffffff;
+    transition: transform 0.3s;
+}
+
+.image-row img:hover {
+    transform: scale(2);
+}
